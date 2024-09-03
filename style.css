@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubrik:wght@300;400;600&display=swap');
+
+:root {
+    ---primary-color:#0984e3;
+    --pink-color:#ef87eb;
+    --blue-color:#74b9ff;
+    --white-color:#ffffff;
+    --light-color:#f5faff;
+    --grey-color:#909090;
+    --dark-color:#252525;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,::before,::after {
+    box-sizing: border-box;
+}
+
+.body{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 16px;
+    font-weight: 400;
+    line-height: 1.8;
+    color: var(--dark-color);
+    background-color: var(--white-color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--dark-color);
+    -webkit-tap-highlight-color: transparent;
+}
+
+ul{list-style: none;}
+h1,h2,h3,h4{font-weight: 600;line-height: normal;}
+h1{font-size: 2.5rem;}
+h2{font-size: 2rem;}
+h3{font-size: 1.5rem;}
+h4{font-size: 1rem;}
+
+.container {
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+header {
+    height: 80px;
+    box-shadow: -2px  2px 45px -20px rgb(0 0 0 / 30%);
+}
+
+header .content {
+    display: flex;
+    justify-content: space-between;
+    line-height: 80px;
+}
+
+header .content :where(.left, ul) {
+    display: flex;
+    gap: 24px;
+}
+
+header .logo a{
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+header .content i {
+    font-size: 20px;
+}
+
+header .right ul li a {
+    position: relative;
+    display: flex;
+}
+
+header .right .num {
+    position: absolute;
+    left: -10px;
+    top: 20px;
+    width: 15px;
+    height: 15px;
+    background-color: var(--dark-color);
+    font-size: 10px;
+    line-height: 14px;
+    text-align: center;
+    color: var(--whte-color);
+    border-radius: 50%;
+}
+
+header ul li a {
+    transition: color .3s;
+}
+
+header ul li a:hover{
+    color: var(---primary-color);
+}
+
+main .content{
+    display: flex;
+    justify-content: center;
+    margin-top: 25%;
+    color: var(--grey-color);
+}
