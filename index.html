@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -8,6 +9,7 @@
     />
     <link rel="stylesheet" href="style.css" />
     <title>Isay Chili Oil</title>
+    <link rel="icon" href="path/to/favicon.ico" type="image/x-icon" /> <!-- Optional Favicon -->
   </head>
   <body>
     <div id="page">
@@ -16,8 +18,8 @@
           <div class="container">
             <div class="content">
               <div class="left">
-                <a href="#" class="trigger"><i class="ri-menu-line"></i></a>
-                <div class="logo"><a href="">.isay</a></div>
+                <a href="javascript:void(0);" class="trigger" aria-label="Open Menu"><i class="ri-menu-line"></i></a>
+                <div class="logo"><a href="#" aria-label="Home">.isay</a></div>
               </div>
               <div class="middle">
                 <nav>
@@ -32,17 +34,119 @@
               </div>
               <div class="right">
                 <ul>
-                  <li><a href=""><i class="ri-search-line"></i></a></li>
-                  <li><a href=""><i class="ri-shopping-bag-2-line"></i></a></li>
-                  <li><a href=""><i class="ri-heart-line"></i></a></li>
-                  <li><a href=""><i class="ri-user-line"></i></a></li>
+                  <li><a href="#" aria-label="Search"><i class="ri-search-line"></i></a></li>
+                  <li><a href="#" aria-label="Shopping Bag"><span class="num">0</span><i class="ri-shopping-bag-2-line"></i></a></li>
+                  <li><a href="#" aria-label="Wishlist"><span class="num">3</span><i class="ri-heart-line"></i></a></li>
+                  <li><a href="#" aria-label="User Account"><i class="ri-user-line"></i></a></li>
                 </ul>
               </div>
             </div>
           </div>
         </header>
-        <main></main>
+        <main>
+          <div class="container">
+            <div class="content">
+              <h1>CONTENT</h1>
+            </div>
+          </div>
+        </main>
+
+        <nav class="mobile-menu">
+          <div class="mini">
+            <a href="#" class="mini-close"><i class="ri-close-line"></i></a>
+            <div class="menu-head">
+              <div class="top">
+                <ul>
+                  <li><a href="#"><span class="num">0</span><i class="ri-shopping-bag-2-line"></i></a></li>
+                  <li><a href="#"><span class="num">3</span><i class="ri-heart-line"></i></a></li>
+                  <li><a href="#"><span class="num">0</span><i class="ri-arrow-left-right-line"></i></a></li>
+                  <li><a href="#"><i class="ri-user-line"></i></a></li>
+                  <li><a href="#"><i class="ri-global-line"></i></a></li>
+                </ul>
+              </div>
+              <div class="logo"><a href="#">.Isay</a></div>
+              <div class="socials">
+                <ul>
+                  <li><a href=""><i class="ri-youtube-line"></i></a></li>
+                  <li><a href=""><i class="ri-instagram-line"></i></a></li>
+                  <li><a href=""><i class="ri-facebook-line"></i></a></li>
+                  <li><a href=""><i class="ri-google-line"></i></a></li>
+                  <li><a href=""><i class="ri-tiktok-line"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="wider">
+            <div class="main-menu">
+              <div class="search">
+                <i class="ri-search-line"></i>
+                <input type="search" placeholder="Search Products">
+                <form action=""></form>
+              </div>
+              <div class="menu-list">
+                <ul>
+                  <li class="has-child">
+                    <a href="#"><span>Produts</span><i class="ri-arrow-right-s-line"></i></a>
+                    <ul>
+                      <li class="back"><a href="#"><span>Products</span><i class="ri-arrow-left-s-line"></i></a></li>
+                      <li><a href="#">Automotive</a></li>
+                      <li><a href="#">Baby</a></li>
+                      <li><a href="#">Beauty</a></li>
+                      <li><a href="#">Fashion</a></li>
+                      <li><a href="#">Health</a></li>
+                      <li><a href="#">Home & Kitchen</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="has-child">
+                    <a href="#"><span>LookBook</span><i class="ri-arrow-right-s-line"></i></a>
+                    <ul>
+                      <li class="back"><a href="#"><span>LookBook</span><i class="ri-arrow-left-s-line"></i></a></li>
+                      <li><a href="#">HTML</a></li>
+                      <li><a href="#">CSS</a></li>
+                      <li><a href="#">JavaScript</a></li>
+                      <li><a href="#">ReactJs</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#"><span>Blog</span></a></li>
+                  <li class="has-child">
+                    <a href="#"><span>Carreers</span><i class="ri-arrow-right-s-line"></i></a>
+                    <ul>
+                      <li class="back"><a href="#"><span>Carreers</span><i class="ri-arrow-left-s-line"></i></a></li>
+                      <li><a href="#">Abroad</a></li>
+                      <li><a href="#">Urgent Positions</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#"><span>Contact</span></a></li>
+                </ul>
+              </div>
+              <div class="copyright">
+                <p>&copy; Copyright Isay Chili Garlic Oil || <a href="#">SheySelga</a></p>
+              </div>
+            </div>
+            <div id="bag">
+              <span>cart</span><i class="ri-shopping-bag-2-line"></i>
+            </div>
+            <div id="wishlist">
+              <span>wishlist</span><i class="ri-heart-line"></i>
+            </div>
+            <div id="compare">
+              <span>compare</span><i class="ri-arrow-left-right-line"></i>
+            </div>
+            <div id="account">
+              <span>account</span><i class="ri-user-line"></i>
+            </div>
+            <div id="language">
+              <span>language</span><i class="ri-global-line"></i>
+            </div>
+          </div>
+        </nav>
+        <div class="overlay-mobile-menu"></div>
       </div>
     </div>
+
+    <!-- Scripts -->
+     <script src="script.js"></script>
+
   </body>
 </html>
